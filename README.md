@@ -64,7 +64,7 @@ Un ejemplo: a este emprendedor le presentaron un caso de una red social para qu�
 * Firebase. 
 
 
-##Rapid prototyping
+## Rapid prototyping
 
 Para crear la red social de nuestro cliente emprendedor, tuvismos varias ideas: 
 
@@ -82,7 +82,7 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 
 ####  Red social de Voluntariado y Ayuda
 
-#####  Contacto
+######  Contacto
 * **Nombre:** Kelly Chumbes Díaz. 
 * **Ocupación:** Abogada, trabaja en el Ministerio de la Mujer y Poblaciones Vulnerables en la Oficina de Voluntariado. 
 * **Edad:**  
@@ -105,8 +105,9 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 4.- Mi trabajo lo conoce la dirección de voluntariado y por tanto el ministerio al que corresponde.  
 5..- Mis acciones son publicadas a nivel nacional, tanto como las de las asociaciones o grupos que nos ayudan.  
 6- Sí nos enteramos, tenemos un registro de todos estos grupos de ayuda y voluntarios, estamos ya creando nuestra propia red de contacto. 
-7.- No tenemos dificultades para ayudar, tenemos los recursos necesarios tanto materiales, como humanitario. Este último lo obtenemos invitando a una o varias organizaciones vigentes en el registro. En este caso fue Alas Peruanas, a través de su oficina de desarrollo social, lo que hicimos en esa ocasión fue el limpiado de residuos solidos y entrega de algunos vivires, junto con la Municipalidad de cada ciudad, ellos brindaron las herramientas.
-**(Preguntas que surgieron)**
+7.- No tenemos dificultades para ayudar, tenemos los recursos necesarios tanto materiales, como humanitario. Este último lo obtenemos invitando a una o varias organizaciones vigentes en el registro. En este caso fue Alas Peruanas, a través de su oficina de desarrollo social, lo que hicimos en esa ocasión fue el limpiado de residuos solidos y entrega de algunos vivires, junto con la Municipalidad de cada ciudad, ellos brindaron las herramientas.  
+
+###### Preguntas que surgieron
 1- ¿Necesitan más personas? 
 1.1- No, tenemos suficiente. Además, nosotros no podemos convocar voluntarios, sino organizaciones o asociaciones de voluntarios.
 
@@ -114,24 +115,6 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 
 * Decidimos que esta primera opción no funcionaría porque ya se tenía un registro de las asociaciones y así pueden ser convocadas para eventos o algún caso en específico. 
 
-
-
-
-fue la direccion
-
-invitado a una organizacion, alas peruanas, a atraves de su oficnande desarrollo social, limpiado, con la unicipalidad (herramientas) 
-
-no faltó gente, porque era trabajo especifico
-
-residuos solidos y entrega de algunos vivires
-
-no pueden convocar voluntarios
-
-no necesitan gente
-
-claro, si hay más asociasiones que hacen ayuda, ellos manjean un registro de asociaciones que ayudan
-
-techo, caritas, impacto peru, cltura, parroquias, poder judicial
 
 ## Agenda
 
