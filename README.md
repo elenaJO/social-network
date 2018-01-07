@@ -63,6 +63,72 @@ Un ejemplo: a este emprendedor le presentaron un caso de una red social para qu�
 
 * Firebase. 
 
+
+## Rapid prototyping
+
+Para crear la red social de nuestro cliente emprendedor, tuvimos varias ideas: 
+
+* Red social de Gamers. 
+* Red social de Programadores.  
+* Red social de Voluntariado y Ayuda.
+* Red social de Viajes y turismo. 
+
+Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían más viables por tener mayor problemática: 
+
+* Red social de Voluntariado y Ayuda.
+* Red social de Viajes y turismo. 
+
+### Desarrollando las ideas
+
+####  Red social de Voluntariado y Ayuda
+
+######  Contacto
+* **Nombre:** Kelly Chumbes Díaz. 
+* **Ocupación:** Abogada, trabaja en el Ministerio de la Mujer y Poblaciones Vulnerables en la Oficina de Voluntariado. 
+* **Edad:**  
+* **Personalidad:** Práctica y Cursi. 
+
+###### Preguntas 
+
+1. ¿Cuándo fue la ultima vez que realizaste un trabajo de voluntariado?
+
+2. ¿Qué tal te fue?
+
+3. ¿Tuviste dificultades?  
+
+4. ¿Quiénes conocen el trabajo que haces?  
+
+5. ¿Tienes algún medio donde publicar tus acciones?  
+
+6. ¿Te enteras de más grupos que realicen acciones parecidas? ¿Cuántas? 
+ ¿Qué dificultades tienes para ayudar?  
+
+
+###### Respuestas 
+1. Mes de agosto, fui a hacer un levatamiento de zonas vulnerables afectadas por el Fenómeno del Niño Costero. Hice el estudio de los albergues en los que se encuentran las personas afectadas. Albergues les decimos(el grupo de trabajo en la oficina de voluntariado) a las carpas que se instalaron en cierto lugares para resguardar a las familias afectadas.  
+
+2. Todo bien, normal. 
+
+3. La dificultad fue llegar a los lugares en donde se encontraban exactamente como: Piura y Chosica.  
+
+4. Mi trabajo lo conoce la dirección de voluntariado y por tanto el ministerio al que corresponde.  
+
+5. Mis acciones son publicadas a nivel nacional, tanto como las de las asociaciones o grupos que nos ayudan.  
+
+6. Sí nos enteramos, tenemos un registro de todos estos grupos de ayuda y voluntarios, estamos ya creando nuestra propia red de contacto. 
+
+7. No tenemos dificultades para ayudar, tenemos los recursos necesarios tanto materiales, como humanitario. Este último lo obtenemos invitando a una o varias organizaciones vigentes en el registro. En este caso fue Alas Peruanas, a través de su oficina de desarrollo social, lo que hicimos en esa ocasión fue el limpiado de residuos solidos y entrega de algunos vivires, junto con la Municipalidad de cada ciudad, ellos brindaron las herramientas.  
+
+
+###### Preguntas que surgieron
+1. ¿Necesitan más personas? 
+    *  No, tenemos suficiente. Además, nosotros no podemos convocar voluntarios, sino organizaciones o asociaciones de voluntarios.
+
+##### Conclusiones
+
+* Decidimos que esta primera opción no funcionaría porque ya se tenía un registro de las asociaciones y así pueden ser convocadas para eventos o algún caso en específico. 
+
+
 ## Agenda
 
 #### Día 1 
