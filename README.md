@@ -1,4 +1,4 @@
-# Mi página
+![traveller](assets/images/traveller.png)  
 
 * **Track:** _Common Core_
 * **Curso:** _Crea tu propia red social_
