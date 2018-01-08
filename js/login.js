@@ -20,8 +20,8 @@ $(document).ready(function() {
       localStorage.photo = result.user.photoURL;
       localStorage.name = result.user.displayName;
       guardarFirebase(result.user);
-    
     });
+    window.location.href = '../views/prueb.html';
   });
   // funcion para guardar en firebase los datos de quien entra
   function guardarFirebase(user) {
