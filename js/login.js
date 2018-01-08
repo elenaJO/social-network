@@ -19,6 +19,7 @@ $(document).ready(function() {
       // guardando la imagen y nombre;
       localStorage.photo = result.user.photoURL;
       localStorage.name = result.user.displayName;
+      console.log(result.user.photoURL);
       guardarFirebase(result.user);
     });
     window.location.href = '../views/prueb.html';
