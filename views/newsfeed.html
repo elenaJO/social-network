@@ -13,12 +13,68 @@
 
 <body>
   <div class="row">
-     <div class="col s12">
-       <input type="file" value="upload" id="fileButton"/>
+      <header>
+      <nav>
+        <div class="nav-wrapper green">
+          <a href="#!" class="brand-logo">Traveller</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="">Friends</a></li>
+            <li><a href="">Pets</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="">Friends</a></li>
+            <li><a href="">Pets</a></li>
+          </ul>
+          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+            <div class="green"></div>
+          </a> 
+        </div>
+      </nav>
+    </header>
+    <nav>
+      <div class="nav-wrapper green">
+        <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+        </form>
       </div>
-  </div>
+      </nav>
+    <main>
+        <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Post you experiences!</label>
+        </div>
+       <div class="col s12">
+          <form action="#">
+            <div class="file-field file-path-wrapper">
+                <div class="btn">
+                    <span><i class="material-icons">image</i></span>
+                    <input class="btn" type="file" value="upload" id="fileButton"/>
+            </div>
+            <button class="btn waves-effect waves-light right" type="submit" name="action">Post
+              </button>
+            </div>
+          </form>
+    </div>
+    </main>
+    <!-- <nav> -->
+      <div class="tab-menu-holder">
+        <ul>
+          <li class="tab-item-btn active"><i class="material-icons">public</i></li>
+          <li class="tab-item-btn"><i class="material-icons">search</i></li>
+          <li class="tab-item-btn"><i class="material-icons">notifications</i></li>
+          <li class="tab-item-btn"><i class="material-icons">chat</i></li>
+        </ul>
+      </div>	
+    <!-- </nav>	 -->
+  
+ </div>
 
-
+  
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../js/newsfeed.js"></script>

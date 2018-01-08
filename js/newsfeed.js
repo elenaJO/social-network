@@ -18,9 +18,14 @@ $(document).ready(function() {
     // obtener archivo
     var file = e.target.files[0];
     // crear un strorage ref
-    var strorageRef = firebase.storage().ref('my_photos' + file.name);
+    var strorageRef = firebase.storage().ref('my_photos_' + file.name);
 
     // subir archivo
     var task = strorageRef.put(file);
+  });
+
+  // BUTTON
+  $(document).ready(function() {
+    $('.button-collapse').sideNav();
   });
 });
