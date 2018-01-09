@@ -9,11 +9,9 @@ $(document).ready(function() {
     messagingSenderId: '445743781768'
   };
   firebase.initializeApp(config);
-
-  // provedor del servicio
-  var provider = new firebase.auth.GoogleAuthProvider();
-
   $('#login').click(function() {
+    // provedor del servicio
+    var provider = new firebase.auth.GoogleAuthProvider();
     // levantar la ventana de gmail y trae un result
     firebase.auth().signInWithPopup(provider).then(function(result) {
       // guardando la imagen y nombre;
@@ -22,8 +20,8 @@ $(document).ready(function() {
       localStorage.id = result.user.uid;
       console.log(result.user);
       guardarFirebase(result.user);
+      window.location.href = '../views/profile.html';
     });
-    // window.location.href = '../views/profile.html';
   });
   // funcion para guardar en firebase los datos de quien entra
   function guardarFirebase(user) {
