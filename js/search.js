@@ -11,6 +11,17 @@ $(document).ready(function() {
   };
   firebase.initializeApp(config);
 
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    var $imagen = $('#seccion img');
+    $imagen.attr('src', result.user.photoURL);
+    var $nombre = $('#seccion #name');
+    $nombre.text(result.user.displayName);
+    console.log(result.user);
+    console.log(result.user.displayName);
+    console.log(result.user.photoURL);
+  });
+
   $('#search').keyup(function() {
     var name = $(this).val();
     console.log(name);
