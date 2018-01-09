@@ -1,4 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  // Initialize Firebase
+  // Initialize Firebase
   // Initialize Firebase
   var config = {
     apiKey: 'AIzaSyBTyPXp0vll8d2Fvi5nViLsKntlNxapEFY',
@@ -9,6 +11,7 @@ $(document).ready(function() {
     messagingSenderId: '445743781768'
   };
   firebase.initializeApp(config);
+
   $('#login').click(function() {
     // provedor del servicio
     var provider = new firebase.auth.GoogleAuthProvider();
