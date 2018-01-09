@@ -29,7 +29,7 @@ $(document).ready(function() {
   var $textArea = $('#textarea1');
   var $postButton = $('#postButton');
   var $date = moment().format('LT'); 
-  var $newsfeedPostUl = $('#newsfeed-post');
+  
   var $valueTextTarea = $textArea.val();
   var $postButton2 = $('button[type=submit]');
   console.log($postButton2);
@@ -44,78 +44,79 @@ $(document).ready(function() {
       $postButton2.attr('disabled', false); // habilita el boton
     }
   });
-  
-  // BUTTON
-  $(document).ready(function() {
-    $('.button-collapse').sideNav();
-  });
-});
-
-
-// twitter
-// window.addEventListener('load', function(event) {
-//     // boton habilitado/desabilitado y contador
-//     textArea.on('keyup', function(event) {
-//       caracteresTweet.textContent = (140 - textArea.value.length);
-  
-//       if (textArea.value.length === 0 || textArea.value === ' ') {
-//         boton.disabled = true; // desabilita el boton
-//       } else if (textArea.value.length >= 1 && textArea.value.length < 120) {
-//         boton.disabled = false; // habilita el boton
-//         caracteresTweet.classList.add('correct'); // agrega color azul
-//       } else if (textArea.value.length >= 120 && textArea.value.length < 130) {
-//         boton.disabled = false; // habilita el boton
-//         caracteresTweet.classList.add('color1');  // agrega color verde
-//       } else if (textArea.value.length >= 130 && textArea.value.length < 140) {
-//         boton.disabled = false; // habilita el boton
-//         caracteresTweet.classList.add('color2'); // agrega color fuxia
-//       } else {
-//         boton.disabled = true; // desabilita el boton
-//         caracteresTweet.classList.add('incorrect'); // agrega color rojo
-//       }
-//     });
-// var area = document.getElementById('tweet-space');
-// var boton = document.getElementById('twittear');
-// var lista = document.getElementById('newsfeed-tweets');
-// var textArea = document.getElementById('textArea');
-// var date = moment().format('LT'); 
-// var caracteresTweet = document.getElementById('caracteres');
-
-// // función general
-// window.addEventListener('load', function(event) {
-//   // boton habilitado/desabilitado y contador
-//   textArea.addEventListener('keyup', function(event) {
-//     caracteresTweet.textContent = (140 - textArea.value.length);
-
-//     if (textArea.value.length === 0 || textArea.value === ' ') {
-//       boton.disabled = true; // desabilita el boton
-//     } else if (textArea.value.length >= 1 && textArea.value.length < 120) {
-//       boton.disabled = false; // habilita el boton
-//       caracteresTweet.classList.add('correct'); // agrega color azul
-//     } else if (textArea.value.length >= 120 && textArea.value.length < 130) {
-//       boton.disabled = false; // habilita el boton
-//       caracteresTweet.classList.add('color1');  // agrega color verde
-//     } else if (textArea.value.length >= 130 && textArea.value.length < 140) {
-//       boton.disabled = false; // habilita el boton
-//       caracteresTweet.classList.add('color2'); // agrega color fuxia
-//     } else {
-//       boton.disabled = true; // desabilita el boton
-//       caracteresTweet.classList.add('incorrect'); // agrega color rojo
-//     }
-//   });
-//   // evento de "twittear"
-//   boton.addEventListener('click', function(event) {
-//     if (textArea.value) { 
-//       var li = document.createElement('li');
-//       var tweet = document.createElement('p');
+  // evento de posteo
+  $(function() {
+    var feed = new Firebase('https://red-social-a1aeb.firebaseio.com/'); 
+    var index = 0;
     
-//       tweet.textContent = textArea.value;
-//       tweet.classList.add('li'); 
-//       li.appendChild(tweet);
-//       lista.appendChild(tweet);
-//       textArea.value = ' '; // para que textarea aparezca nuevamente en lbanco
-//     }
-//   });
+    feed.on('child_added', function(snapshot) {
+      var data = snapshot.val();
+      var card = '<div class="card">'+
+            '<div class="header">'+
+              '<div class="user-panel">'+
+                '<div class="pull-left">'+
+                  '<div class="user-img pull-left" style="background-image: url()"></div>'+
+                  '<div class="user-info pull-left">'+
+                    'Alexandra'+
+                    '<Br/>'+
+                    '<small>11/28/16 10:55PM</small>'+
+                  '</div>'+
+                '</div>'+
+  
+                '<div class="pull-right feed-menu">'+
+                  '<i class="fa fa-ellipsis-v"></i>'+
+                '</div>'+
+                '<div class="clearfix"></div>'+
+              '</div>'+
+            '</div>'+
+  
+            '<div class="body">'+
+            '	<div class="text">'+ data.desc +'</div>';
+        if(data.img != "") {
+          card +=	'<div class="img">'+
+                '<img src="' + data.img + '" />'+
+                          '</div>';
+        }
+            
+          card += '</div></div>';
+        $('#loading_spin').hide("fast");
+        $('.loadNewsfeed').prepend(card);
+    });
+  // var feed = new Firebase('https://red-social-a1aeb.firebaseio.com/');  //link de database firebase
+
+  // var index = 0;
 
   
-// });
+
+  // $postButton2.on('click', function(event) {
+  //   if ($textArea.val()) {
+
+  //     var $div= $('<div></div>'); // creo un div contenedor
+  //     var date = moment().format('LT'); // moment.js
+  //     var $li = $( '<li></li>' ).text($textArea.val()); // li obtiene contenido de textarea
+  //     var $liDate = $('<li></li>').text(date); // li obtiene datos del momento
+  //     // $($liDate).prependTo('#newsfeed-post');
+  //     // $($li).appendTo('#newsfeed-post');
+  //     // var postInformation = ($li)
+  //     $($div).html($liDate);
+  //     // $($div).text($li);
+      
+
+  //     $($div).prependTo( "#newsfeed-post" );
+
+  //     // 
+  //     // $($div).text($li); // contenido de textarea pasa al div
+  //    // contenido de momento pasa al div
+
+  //     // $($div).prependTo( "#newsfeed-post" );
+  //     // console.log($li);
+  //     // console.log($div);
+  //   }
+  // });
+
+  // // BUTTON
+  // $(document).ready(function() {
+  //   $('.button-collapse').sideNav();
+  });
+
+});

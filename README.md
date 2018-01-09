@@ -1,3 +1,4 @@
+#Traveller 
 ![traveller](assets/images/traveller.png)  
 
 * **Track:** _Common Core_
@@ -85,7 +86,7 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 ######  Contacto
 * **Nombre:** Kelly Chumbes Díaz. 
 * **Ocupación:** Abogada, trabaja en el Ministerio de la Mujer y Poblaciones Vulnerables en la Oficina de Voluntariado. 
-* **Edad:**  
+* **Edad:**  32.
 * **Personalidad:** Práctica y Cursi. 
 
 ###### Preguntas 
@@ -127,6 +128,89 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 ##### Conclusiones
 
 * Decidimos que esta primera opción no funcionaría porque ya se tenía un registro de las asociaciones y así pueden ser convocadas para eventos o algún caso en específico. 
+
+####  Red social de Viajes 
+
+######  Contacto
+* **Nombre:** Oscar Chumbes Díaz. 
+* **Ocupación:** Neonatólogo. Matrimonio feliz. 
+* **Edad:**  42
+* **Personalidad:** Práctico, aventurero, músico aficionado. 
+
+###### Preguntas 
+1. ¿Cuándo fue la ultima vez que viajaste??
+
+2. ¿Sabías exactamente cómo sería tu viaje?
+
+3. ¿Sabías de los pasajes y hospedaje? 
+
+4. ¿Tenías conocidos? 
+
+5. ¿Qué te sorprendió del viaje?
+
+6. ¿Qué dificultades tuviste? 
+
+7. ¿Compartiste tu experiencia? donde? cómo? con quiénes? 
+
+8. ¿Te gustaría incentivar a otras personas a ir ? por qué?
+
+###### Respuestas 
+
+
+######  Contacto
+* **Nombre:** Allison Chumbes Díaz. 
+* **Ocupación:** Nutricionista, trabaja en el sector de minería. 
+* **Edad:**  37. 
+* **Personalidad:** Práctica y Cursi. 
+
+###### Preguntas 
+1. ¿Cuándo fue la ultima vez que viajaste??
+
+2. ¿Sabías exactamente cómo sería tu viaje?
+
+3. ¿Sabías de los pasajes y hospedaje? 
+
+4. ¿Tenías conocidos? 
+
+5. ¿Qué te sorprendió del viaje?
+
+6. ¿Qué dificultades tuviste? 
+
+7. ¿Compartiste tu experiencia? donde? cómo? con quiénes? 
+
+8. ¿Te gustaría incentivar a otras personas a ir ? por qué?
+
+###### Respuestas 
+
+
+
+### Prototyping 
+
+* **Tema**: Viajes.
+* **Promáticas:** 
+    
+   * Dudas sobre pasajes, dónde comprarlos y exactamente a qué lugar. 
+   * No saber cómo llegar a ciertos puntos del lugar visitado. 
+   * Búsqueda de lugares para comer en Google lo que en realidad no garantiza que tan buena sea la comida.
+   * Búsqueda de hospedaje en Google o preguntando a personas del lugar. Estos hospedajes a veces no terminan de satisfacer a los usuarios, incluso si se ha comprado paquetes de viaje.
+   * Sentimiento de pérdida de experiencias. Puesto que, si compraron paquetes le dieron lugares específicos a donde ir y no fueron a otros lugares(les negaron la experiencia) y cuando viajan por sí solo no saben a donde ir y preguntan ahí mismo (un poco de pérdida de tiempo). 
+   * Cuando las personas viajeras publican sus experiencias en red sociales muy usadas, se emocionan tanto y pueden incomodar a sus amigos. 
+* **Propuesta de solución:**
+
+* **Búsqueda de soluciones parecidas a nuestra propuesta:**
+  * Google Trips: 
+    Aplicación que te ayuda a planear un viaje tiene zona de compra de pasajes, reservación de hospedaje, etc. Pero no un contacto de usuario-usuario en el que se pueda dar una interacción y compartir experiencias y consejos.
+
+### Definición del diseño 
+
+* **Nombre de la app**: Traveller.
+
+* **Paleta de colores:** 
+  Los colores se eligieron en base al significado psicológico de estos. 
+
+  * Verde :
+
+* 
 
 
 ## Agenda
