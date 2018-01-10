@@ -57,51 +57,57 @@
       </div>
     </nav>
     <main>
-      <div class="input-field col s12">
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
-        <label for="textarea1">Post you experiences!</label>
-      </div>
-      <div class="col s12">
-        <form action="#">
-          <div class="file-field file-path-wrapper">
-            <div class="btn">
-              <span>
-                <i class="material-icons">image</i>
-              </span>
-              <input class="btn" type="file" value="upload" id="fileButton" />
-            </div>
-            <button id="postButton" class="btn waves-effect waves-light right" type="submit" name="action" disabled>Post
-            </button>
-          </div>
-        </form>
-      </div>
       <!-- Post -->
-      <section>
-        <div class="col s12 m2 z-depth-3">
-          <div class="loadNewsfeed" id="newsfeed-post">
-
+      <div class="col s12">
+        <!-- Textarea de post -->
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Post you experiences!</label>
           </div>
         </div>
-      </section>
-      <!-- Fin Post -->
-      <!-- <nav> -->
-      <div class="tab-menu-holder">
-        <ul>
-          <li class="tab-item-btn active">
-            <i class="material-icons">public</i>
-          </li>
-          <li class="tab-item-btn">
-            <i class="material-icons">search</i>
-          </li>
-          <li class="tab-item-btn">
-            <i class="material-icons">notifications</i>
-          </li>
-          <li class="tab-item-btn">
-            <i class="material-icons">chat</i>
-          </li>
-        </ul>
+        <!-- Fin textarea -->
+        <!-- Nombre de imagen -->
+        <span id="file-info"></span>
       </div>
-      <!-- </nav>	 -->
+      <!-- boton para seleccionar file -->
+      <a href="#" class="btn" id="file-select">
+        <i class="material-icons">image</i>
+      </a>
+      <!-- fin boton file -->
+      <!-- input file oculto -->
+      <input type="file" name="file" id="file" />
+      <!-- fin input oculto -->
+
+      <a href="#" type="submit" id="postButton" class="btn" disabled>POST</a>
+      <!-- Fin Post -->
+      <!-- Card para el post -->
+        
+      <div class="card" id="preview" class="thumbnail">
+        <img src="">
+       
+      </div>
+      
+      <!-- fin card -->
+    </main>
+    <!-- <nav> -->
+    <div class="tab-menu-holder">
+      <ul>
+        <li class="tab-item-btn active">
+          <i class="material-icons">public</i>
+        </li>
+        <li class="tab-item-btn">
+          <i class="material-icons">search</i>
+        </li>
+        <li class="tab-item-btn">
+          <i class="material-icons">notifications</i>
+        </li>
+        <li class="tab-item-btn">
+          <i class="material-icons">chat</i>
+        </li>
+      </ul>
+    </div>
+    <!-- </nav>	 -->
 
   </div>
 
