@@ -222,3 +222,8 @@
 .file-field input[type=file] {
     width: 20%;
 }
+
+/* vista newsfeed */
+.img-pub {
+  width: 80%;
+}
