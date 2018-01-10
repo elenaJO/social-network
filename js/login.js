@@ -1,7 +1,7 @@
 $(document).ready(function() {
   setTimeout(function() { 
     window.location.href = '../views/profile.html';
-  }, 30000);
+  }, 22000);
 
   // Initialize Firebase
   var config = {
