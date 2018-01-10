@@ -196,7 +196,8 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
    * Sentimiento de pérdida de experiencias. Puesto que, si compraron paquetes le dieron lugares específicos a donde ir y no fueron a otros lugares(les negaron la experiencia) y cuando viajan por sí solo no saben a donde ir y preguntan ahí mismo (un poco de pérdida de tiempo). 
    * Cuando las personas viajeras publican sus experiencias en red sociales muy usadas, se emocionan tanto y pueden incomodar a sus amigos. 
 * **Propuesta de solución:**
-
+  * Una red social de viajes, en la que los usuarios puedan postear imágenes de sus experiencias y dar tips. 
+  
 * **Búsqueda de soluciones parecidas a nuestra propuesta:**
   * Google Trips: 
     Aplicación que te ayuda a planear un viaje tiene zona de compra de pasajes, reservación de hospedaje, etc. Pero no un contacto de usuario-usuario en el que se pueda dar una interacción y compartir experiencias y consejos.
@@ -208,9 +209,17 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 * **Paleta de colores:** 
   Los colores se eligieron en base al significado psicológico de estos. 
 
-  * Verde :
+  * Verde:  *rgb(0, 231, 119)* Inspira fuerza, salud, naturaleza y libertad.
+  * Blanco: Creatividad. Inspira al juego, profundidad y paz.
+  ![traveller](assets/images/escala.png)
 
-* 
+* Branding: 
+  1. Nombre: 
+    Ya que el tema de la red social es viajes, pues al principio quisimos que fuera "Travel", pero en vista de que era muy general decidimos aumentar un "ler", que hacía que se viera y esuchara más profesional.
+  
+  2. Isotipo: 
+    Se creó un logo en base al tono de verde escogido y un ícono que representara el concepto de nuestra red social.
+    ![traveller](assets/images/traveller.png)
 
 
 ## Agenda
@@ -223,6 +232,44 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 3. Lluvia de ideas para elegir el tema en el que se basará nuestra red social. (7min)
 4. Elegir las ideas en las que se crea encontrar problámaticas.(7min)
 5. Planificar nuevamente cómo se llevarán a cabo las tareas para testear nuestros posibles temas. (10min)
+
+#### Día 1 
+
+
+1. Leer el reto y priorizar sus requerimientos.(10min)
+2. Creación de un plan: Estimación de tiempo/tareas. (10min)
+3. Lluvia de ideas para elegir el tema en el que se basará nuestra red social. (7min)
+4. Elegir las ideas en las que se crea encontrar problámaticas.(7min)
+5. Planificar nuevamente cómo se llevarán a cabo las tareas para testear nuestros posibles temas. (10min)
+
+
+#### Día 2 
+
+
+1. 
+2. 
+3. 
+4. 
+5. 
+
+
+#### Día 1 
+
+
+1. 
+2. 
+3. 
+4. 
+5. 
+
+#### Día 1 
+
+
+1. 
+2. 
+3. 
+4. 
+5. 
 
 
 ## Logro
