@@ -16,11 +16,13 @@ $(document).ready(function() {
     for (var i = 0; i < keys.length; i++) {
       var currentObject = usuariosArray[keys[i]];
       var container = '<div class="row">' +
-          '<div class="col s 12 align-center">' +
-            '<img src = \'' + currentObject.foto + '\'class=\'circle responsive-img col s3\' >' +
-            '<p class="black-text col s9">' + currentObject.nombre + '</p>' +
-          '</div>' +
-        '</div>';
+        '<div class="col s 12 align-center">' +
+          '<img src = \'' + currentObject.foto + '\'class=\'circle responsive-img col s3\' >' +
+          '<h6 class="black-text col s9">' + currentObject.nombre + '</h6>' +
+          '<a class="waves-effect waves-light btn">Followers  ' + currentObject.seguidores + '</a>' +
+          '<a class="btn-floating red"><i class="material-icons">add</i></a>' +
+        '</div>' +
+      '</div>';
       $('#seccion').append(container);
       console.log(currentObject.nombre);
       console.log(currentObject.foto);

@@ -51,7 +51,7 @@ $(document).ready(function() {
       '<div></div>';
     var reader = new FileReader();
     reader.onload = function(event) {
-      var appenReplace = appen.replace('_pub_', event.target.result).replace('_photo_', localStorage.photo).replace('<h4></h4>', localStorage.name);
+      var appenReplace = appen.replace('_pub_', event.target.result).replace('<h4></h4>', localStorage.name);
       $('#publicaciones').append(appenReplace);
     };
     reader.readAsDataURL(this.files[0]);
@@ -80,7 +80,7 @@ $(document).ready(function() {
     '<div></div>' + 
     '<br>';
 
-    var appenReplace = appen.replace('<span></span>', $textArea.val()).replace('_photo_', localStorage.photo).replace('<h4></h4>', localStorage.name);
+    var appenReplace = appen.replace('<span></span>', $textArea.val()).replace('<h4></h4>', localStorage.name);
     $('#publicaciones').append(appenReplace);
     
     $valueTextTarea = $textArea.val('');
