@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
   $('.button-collapse').sideNav();
   $('#foto').attr('src', localStorage.photo);
   var config = {
