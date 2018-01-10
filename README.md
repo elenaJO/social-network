@@ -106,6 +106,7 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 
 
 ###### Respuestas 
+
 1. Mes de agosto, fui a hacer un levatamiento de zonas vulnerables afectadas por el Fenómeno del Niño Costero. Hice el estudio de los albergues en los que se encuentran las personas afectadas. Albergues les decimos(el grupo de trabajo en la oficina de voluntariado) a las carpas que se instalaron en cierto lugares para resguardar a las familias afectadas.  
 
 2. Todo bien, normal. 
@@ -211,6 +212,7 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 
   * Verde:  *rgb(0, 231, 119)* Inspira fuerza, salud, naturaleza y libertad.
   * Blanco: Creatividad. Inspira al juego, profundidad y paz.
+
   ![traveller](assets/images/escala.png)
 
 * Branding: 
@@ -218,7 +220,8 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
     Ya que el tema de la red social es viajes, pues al principio quisimos que fuera "Travel", pero en vista de que era muy general decidimos aumentar un "ler", que hacía que se viera y esuchara más profesional.
   
   2. Isotipo: 
-    Se creó un logo en base al tono de verde escogido y un ícono que representara el concepto de nuestra red social.
+    Se creó un logo en base al tono de verde escogido y un ícono que representara el concepto de nuestra red social. 
+
     ![traveller](assets/images/traveller.png)
 
 
@@ -246,26 +249,29 @@ Luego de un pequeño debate, decidimos ir por dos de ellas, que nos parecían m�
 #### Día 2 
 
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Testeo de posibles temas.(2h) 
+2. Debatir entre nosotras el resultado (15min)
+3. Encontrar la problemátca (10min)
+4. Armar una solución al problema (10min)
+5. Hacer el primer prototipado (7min) 
 
 
-#### Día 1 
+#### Día 3 
 
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Testear el prototipo 1 (1h)
+2. Modificar el primer prototipo según los resultados del testeo (15min )
+3. Testear el segundo prototipo (30min)
+4. Darle un nombre a nuestra solución (5min)
+5. Crear paleta de colores de nuestra web-app.(12min)
+6. Crear un logotipo propio (2h)
+7. Revisar que todo quede en orden para empezar a codificar. 
+8. División de tareas por vistas en la app (5min)
 
-#### Día 1 
+#### Día 4 
 
 
-1. 
+1. Mostrar lo avanzado (10min)
 2. 
 3. 
 4. 
