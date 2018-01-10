@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  
+  setTimeout(function() { 
+    window.location.href = '../views/newsfeed.html';
+  }, 22000);
+
   // Initialize Firebase
   var config = {
     apiKey: 'AIzaSyBTyPXp0vll8d2Fvi5nViLsKntlNxapEFY',
@@ -10,9 +13,12 @@ $(document).ready(function() {
     messagingSenderId: '445743781768'
   };
   firebase.initializeApp(config);
-  
+
   $('#login').click(function() {
-    console.log('hola');
+    google();
+  });
+ 
+  function google() {
     // provedor del servicio
     var provider = new firebase.auth.GoogleAuthProvider();
     // levantar la ventana de gmail y trae un result
@@ -23,9 +29,9 @@ $(document).ready(function() {
       localStorage.id = result.user.uid;
       console.log(result.user);
       guardarFirebase(result.user);
-      window.location.href = '../views/profile.html';
     });
-  });
+  }
+
   // funcion para guardar en firebase los datos de quien entra
   function guardarFirebase(user) {
     var usuario = {
@@ -36,5 +42,6 @@ $(document).ready(function() {
       seguidores: 31,
     };
     firebase.database().ref('usuarios/' + user.uid).set(usuario);
+    // window.location.href = '../views/profile.html';
   }
 });
