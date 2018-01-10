@@ -13,15 +13,30 @@ $(document).ready(function() {
     messagingSenderId: '445743781768'
   };
   // console.log(localStorage.id);
-  // para traer de la base de datos el numero de seguidores
+
   firebase.initializeApp(config);
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      var token = firebase.auth().currentUser.uid;
+      queryDataset(token);
+    }
+  });
+
+  function queryDataset(token) {
+    firebase.database().ref('/Posts/').once('value').then(function(snapshot) {
+      var array = snapshot.val();
+      console.log(array);
+    });
+  }
+  // para traer de la base de datos el numero de seguidores
   var dbRef = firebase.database().ref('usuarios');
   var dbRefUsu = dbRef.child(localStorage.id);
   dbRefUsu.on('value', function(snap) {
     $seguidores.text((snap.val()['seguidores']));
     // console.log(snap.val());
   });
-
+  
   // aumentar o disminuir seguidores
   $('#follow').click(function() {
     $(this).toggleClass('followed');
