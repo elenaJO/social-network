@@ -40,7 +40,7 @@ $(document).ready(function() {
     });
     var appen = '<div class="row">' +
       '<div class="col s 12 align">' + 
-      '<div style="display=inline-block" class="img-user"><img src="_photo_"></div>' + '<div class="div-name"><h4></h4></div>' + '<br>' +
+      '<div style="display=inline-block"><img class="img-user" src=""></div>' + '<div class="div-name"><h4></h4></div>' + '<br>' +
       '<img src="_pub_" alt="" class="img-pub">' +
       '</div>' +
       '<br>' + '<br>' +
@@ -51,7 +51,7 @@ $(document).ready(function() {
       '<div></div>';
     var reader = new FileReader();
     reader.onload = function(event) {
-      var appenReplace = appen.replace('_pub_', event.target.result).replace('<h4></h4>', localStorage.name);
+      var appenReplace = appen.replace('_pub_', event.target.result).replace('<img class="img-user" src="_photo_">', localStorage.photo).replace('<h4></h4>', localStorage.name);
       $('#publicaciones').append(appenReplace);
     };
     reader.readAsDataURL(this.files[0]);
@@ -70,7 +70,7 @@ $(document).ready(function() {
   $postButton.on('click', function() {
     var appen = '<div class="row">' +
     '<div class="col s 12 align">' +
-    '<div style="display=inline-block" class="img-user"><img src="_photo_"></div>' + '<div class="div-name"><h4></h4></div>' + '<br>' +
+    '<div style="display=inline-block"><img class="img-user" src="_photo_"></div>' + '<div class="div-name"><h4></h4></div>' + '<br>' +
     '<li><span></span><li>' +
     '<br>' + '<br>' +
     '<a class="a-icon"><i class="material-icons">favorite</i></span></a>' + 
@@ -80,7 +80,7 @@ $(document).ready(function() {
     '<div></div>' + 
     '<br>';
 
-    var appenReplace = appen.replace('<span></span>', $textArea.val()).replace('<h4></h4>', localStorage.name);
+    var appenReplace = appen.replace('<span></span>', $textArea.val()).replace('<img class="img-user" src="_photo_">', localStorage.photo).replace('<h4></h4>', localStorage.name);
     $('#publicaciones').append(appenReplace);
     
     $valueTextTarea = $textArea.val('');
