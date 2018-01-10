@@ -5,92 +5,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Search</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="../vendors/materialize/css/materialize.css" />
-  <link rel="stylesheet" type="text/css" href="../css/newsfeed.css">
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon/6314traveller.ico">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/newsfeed.css">
 </head>
 
 <body>
-  <div class="row">
-    <header>
-      <nav>
-        <div class="nav-wrapper green">
-          <a href="#!" class="brand-logo">Traveller</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="">Friends</a>
-            </li>
-            <li>
-              <a href="">Pets</a>
-            </li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li>
-              <a href="">Friends</a>
-            </li>
-            <li>
-              <a href="">Pets</a>
-            </li>
-          </ul>
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
-            <div class="green"></div>
-          </a>
-        </div>
-      </nav>
-    </header>
+  <header>
     <nav>
       <div class="nav-wrapper green">
-        <form>
-          <div class="input-field">
-            <input id="search" type="search" required>
-            <label class="label-icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
-            <i class="material-icons">close</i>
-          </div>
-        </form>
+        <a href="#!" class="brand-logo">Traveller</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="">Friends</a>
+          </li>
+          <li>
+            <a href="">Pets</a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li>
+            <a href="">Friends</a>
+          </li>
+          <li>
+            <a href="">Pets</a>
+          </li>
+        </ul>
+        <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+          <!-- <div class="green"></div> -->
+          <img src="" alt="" id="foto" class="photo-user">
+        </a>
       </div>
     </nav>
-    <main>
-      <!-- Post -->
-      <div class="col s12">
-        <!-- Textarea de post -->
-        <div class="row">
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
           <div class="input-field col s12">
             <textarea id="textarea1" class="materialize-textarea"></textarea>
             <label for="textarea1">Post you experiences!</label>
           </div>
         </div>
-        <!-- Fin textarea -->
-        <!-- Nombre de imagen -->
-        <span id="file-info"></span>
       </div>
-      <!-- boton para seleccionar file -->
-      <a href="#" class="btn" id="file-select">
-        <i class="material-icons">image</i>
-      </a>
-      <!-- fin boton file -->
-      <!-- input file oculto -->
-      <input type="file" name="file" id="file" />
-      <!-- fin input oculto -->
+      <div class="row">
+        <div class="col s12">
+          <form action="#">
+            <div class="file-field file-path-wrapper">
+              <div class="btn">
+                <span>
+                  <i class="material-icons">image</i>
+                </span>
+                <input class="btn" type="file" value="upload" id="fileButton" />
+              </div>
+              <button id="postButton" class="btn waves-effect waves-light right" type="submit" name="action" disabled>Post
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="publicaciones">
 
-      <a href="#" type="submit" id="postButton" class="btn" disabled>POST</a>
-      <!-- Fin Post -->
-      <!-- Card para el post -->
-        
-      <div class="card" id="preview" class="thumbnail">
-        <img src="">
-       
       </div>
-      
-      <!-- fin card -->
-    </main>
-    <!-- <nav> -->
+      <!-- <div class="row">
+        <div class="col s 12">
+          <img src="" alt="" id="agrego" class="pi">
+        </div>
+      </div> -->
+    </div>
+  </main>
+  <!-- <nav> -->
     <div class="tab-menu-holder">
       <ul>
         <li class="tab-item-btn active">
@@ -108,14 +97,10 @@
       </ul>
     </div>
     <!-- </nav>	 -->
-
-  </div>
-
-  <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="../js/newsfeed.js"></script>
-  <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+  <script src="../js/newsfeed.js"></script>
 </body>
 
 </html>

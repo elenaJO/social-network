@@ -1,6 +1,6 @@
-// Initialize Firebase
 $(document).ready(function() {
-  // configuración a firebase
+  $('.button-collapse').sideNav();
+  $('#foto').attr('src', localStorage.photo);
   var config = {
     apiKey: 'AIzaSyBTyPXp0vll8d2Fvi5nViLsKntlNxapEFY',
     authDomain: 'red-social-a1aeb.firebaseapp.com',
@@ -10,41 +10,53 @@ $(document).ready(function() {
     messagingSenderId: '445743781768'
   };
   firebase.initializeApp(config);
-   // variables necesarias para funcionalidad
-
   var $textArea = $('#textarea1');
   var $postButton = $('#postButton');
-  var $date = moment().format('LT');
+  // var $date = moment().format('LT');
 
   var $valueTextTarea = $textArea.val();
-  var $postButton2 = $('a[type=submit]');
+  var $postButton2 = $('button[type=submit]');
+  // var dbRef = firebase.database().ref('usuarios');
+  $('#fileButton').change(function() {
+    var file = event.target.files[0];
+    var storageRef = firebase.storage().ref('/' + localStorage.name + '/' + file.name);
+    var task = storageRef.put(file);
+    task.on('state_changed', function(snapshot) {
 
-  // Evento de lectura de imagen 
-  $('#file-select').on('click', function(event) {
-    event.preventDefault();
-    $('#file').click();
-  });
+    }, function(error) {
 
-  $('input[type=file]').change(function() {
-    var file = (this.files[0].name).toString();
-
-    var reader = new FileReader();
-    $('#file-info').text('');
-    $('#file-info').text(file);
-    $postButton2.attr('disabled', false);
-
-    $postButton.on('click', function(event){
-      reader.onload = function(event) {
-        $('#preview img').attr('src', event.target.result);
-       
+    }, function(error) {
+      var postKey = firebase.database().ref('Posts/').push().key;
+      var downloadURL = task.snapshot.downloadURL;
+      var updates = {};
+      var postData = {
+        url: downloadURL,
+        user: localStorage.id,
+        name: localStorage.name
       };
-      reader.readAsDataURL(this.files[0]);
-     });
+      updates['/Posts/' + postKey] = postData;
+      firebase.database().ref().update(updates);
+      // console.log(downloadURL);
+    });
+    var appen = '<div class="row">' +
+      '<div class="col s 12 align">' + 
+      '<div style="display=inline-block" class="img-user"><img src="_photo_"></div>' + '<div class="div-name"><h4></h4></div>' + '<br>' +
+      '<img src="_pub_" alt="" class="img-pub">' +
+      '</div>' +
+      '<br>' + '<br>' +
+      '<a class="a-icon"><i class="material-icons">favorite</i></span></a>' + 
+      '<a class="a-icon"><i class="material-icons">question_answer</i></span></a>' +
+      '<a class="a-icon rigth"><i class="material-icons">more_horiz</i></span></a>' +
+      '</div>' +
+      '<div></div>';
+    var reader = new FileReader();
+    reader.onload = function(event) {
+      var appenReplace = appen.replace('_pub_', event.target.result).replace('_photo_', localStorage.photo).replace('<h4></h4>', localStorage.name);
+      $('#publicaciones').append(appenReplace);
+    };
+    reader.readAsDataURL(this.files[0]);
   });
 
-   
-
-  // habilitar funcion de postear (boton POST)
   $textArea.on('keyup', function(event) {
     // Si textArea no contiene nada o contiene un vacío el boton se desabilita
     if ($(this).val().length === 0 || $(this).val().length === ' ') {
@@ -53,7 +65,24 @@ $(document).ready(function() {
     } else if ($(this).val().length >= 1) {
       $postButton2.attr('disabled', false); // habilita el boton
     }
- });
+  });
 
+  $postButton.on('click', function() {
+    var appen = '<div class="row">' +
+    '<div class="col s 12 align">' +
+    '<div style="display=inline-block" class="img-user"><img src="_photo_"></div>' + '<div class="div-name"><h4></h4></div>' + '<br>' +
+    '<li><span></span><li>' +
+    '<br>' + '<br>' +
+    '<a class="a-icon"><i class="material-icons">favorite</i></span></a>' + 
+    '<a class="a-icon"><i class="material-icons">question_answer</i></span></a>' +
+    '<a class="a-icon rigth"><i class="material-icons">more_horiz</i></span></a>' +
+    '</div>' +
+    '<div></div>' + 
+    '<br>';
+
+    var appenReplace = appen.replace('<span></span>', $textArea.val()).replace('_photo_', localStorage.photo).replace('<h4></h4>', localStorage.name);
+    $('#publicaciones').append(appenReplace);
+    
+    $valueTextTarea = $textArea.val('');
+  });
 });
-
