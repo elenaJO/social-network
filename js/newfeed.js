@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $('.button-collapse').sideNav();
   $('#foto').attr('src', localStorage.photo);
   var config = {
@@ -10,5 +10,36 @@ $(document).ready(function() {
     messagingSenderId: '445743781768'
   };
   firebase.initializeApp(config);
-  var dbRef = firebase.database().ref('usuarios');
+  // var dbRef = firebase.database().ref('usuarios');
+  $('#fileButton').change(function() {
+    var file = event.target.files[0];
+    var storageRef = firebase.storage().ref('/' + localStorage.name + '/' + file.name);
+    var task = storageRef.put(file);
+    task.on('state_changed',function(snapshot) {
+
+    }, function(error) {
+
+    }, function(error) {
+      var postKey = firebase.database().ref('Posts/').push().key;
+      var downloadURL = task.snapshot.downloadURL;
+      var updates = {};
+      var postData = {
+        url: downloadURL,
+        user: localStorage.id,
+        name: localStorage.name
+      };
+      updates['/Posts/' + postKey] = postData;
+      firebase.database().ref().update(updates);
+      console.log(downloadURL);
+    // },
+    // var storageCarp = firebase.storage().ref('/' + localStorage.name + '/');
+    // var filename = file.name;
+    // var fileRef = storage.child(filename);
+    // var reader = new FileReader();
+    // reader.onload = function(event) {
+    //   $('#agrego').attr('src', event.target.result);
+    // };
+    // reader.readAsDataURL(this.files[0]);
+    });
+  });
 });
