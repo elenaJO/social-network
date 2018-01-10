@@ -44,7 +44,19 @@ header nav{
   font-size: 20px;
 }
 
-/* #seccion img{
-  width: 10vw;
+#seccion{
+  padding: 4vw;
+}
 
-} */
+.pets{
+  font-family: 'Delius', cursive !important;
+}
+
+.pets img{
+  width: 50vw;
+  height: 60vw;
+}
+
+.inline-block{
+  display: inline-block;
+}
