@@ -35,13 +35,13 @@ $(document).ready(function() {
       localStorage.photo = result.user.photoURL;
       localStorage.name = result.user.displayName;
       localStorage.id = result.user.uid;
-      console.log(result.user);
+      // console.log(result.user);
       firebase.database().ref('/usuarios/').once('value').then(function(snapshot) {
         var usuariosArray = snapshot.val();
         var keys = Object.keys(usuariosArray);
         for (var i = 0; i < keys.length; i++) {
           var currentObject = usuariosArray[keys[i]];
-          console.log(currentObject.nombre);
+          // console.log(currentObject.nombre);
           if (currentObject.nombre === result.user.displayName) {
             j = false;
             i = keys.length;
