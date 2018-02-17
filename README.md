@@ -1,69 +1,13 @@
-# Traveller 
-![traveller](assets/images/traveller.png)  
+# Travellers 
+  
+Travellers es una red social para aventureros donde pueden postear sus experiencias, compartir sus fotos y seguir a mas viajeros.
 
-* **Track:** _Common Core_
-* **Curso:** _Crea tu propia red social_
-* **Unidad:** _Crea tu propia red social_
-* **Alumnas:**  
-  * Elena Japa.  
-  * Laura Velarde.  
-  * Alexandra Calderón.  
+![captura-1](https://user-images.githubusercontent.com/32310087/36345726-524b0cbe-13fe-11e8-8e20-dff70b0995ab.JPG)
 
+![image](https://user-images.githubusercontent.com/32310087/36345734-8f642b6c-13fe-11e8-94f2-4a89ff22a918.png)
 
-***
-
-En este reto, un emprendedor muy visionario nos ha encargado crear una red social. No nos da mucho detalle sobre qué tipo de red social quiere, él solo nos dice que creemos la que mejor podamos y que luego lo convenzamos de que nuestra red social será la más exitosa.
-
-Para él hay algunos puntos básicos que debe tener una red social:
-
-* Perfiles de usuarios.  
-* Un newsfeed donde puedes ver las actualizaciones de todos tus contactos.  
-* Un lugar donde poder escribir posts.  
-* Un lugar para subir fotos.  
-* Capacidad para poder tener amigos o para poder seguir a personas/marcas dentro de la red social.  
-* Ser mobile friendly.  
-* Etc.
-
-Este emprendedor, además, sabe que los creadores de productos tienen que pensar siempre en los usuarios y espera que tengas en cuenta lo que necesitan los usuarios al momento de crear este producto, si piensas por ejemplo en una red social para compartir memes, o una para compartir cosas de mascotas o alguna otra para compartir tips sobre restaurantes o recetas, tendrás que tener en cuenta qué es lo que le gustaría encontrar a un usuario sobre estos temas en la red social.
-
-Un ejemplo: a este emprendedor le presentaron un caso de una red social para químicos. En esta red social los químicos postean artículos sobre sus investigaciones y pueden encontrar el contenido de acuerdo a lo más popular, lo reciente o lo más comentado. Además, pueden comentar en los artículos de sus colegas y pueden filtrar artículos de acuerdo a determinadas etiquetas.
-
-## Requerimientos 
-* Trabajar en parejas.  
-* Tener una planificación.  
-* La definición del diseño.  
-* Diseño mobile friendly.  
-* Desplegar el producto en Github Pages.  
-* Desarrollar un login o se desea almacenar la información en una base de datos, usar Firebase.  
-
-## Objetivos del reto
-* Aprender a **planificar**.
-* Crear **plan** de acción.
-* **Documentar** propuesta y plan de acción en el **README.md**.
-* Encontrar una **problemática** a la que darle solución.
-* **Prototipar** y **testear**.
-* Sustentar tu propuesta y **recolectar feedback**.  
-* Crear una **red social** viable.
-* Aprender a usar **Firebase**.
-* Implementar `gh.pages`. 
-* Compartir la experiencia de aprendizaje.  
-
-## Herramientas usadas
-
-* HTML.  
-
-* CSS.  
-
-* Grid System.  
-
-* Media Query.  
-
-* Framework: 
-
-* Jquery. 
-
-* Firebase. 
-
+## Desarrollado con ...
+`HTML5` `CSS3` `JQuery` `Materialize` `Firebase`
 
 ## Rapid prototyping
 
@@ -310,12 +254,7 @@ primero a jaen en avion y luego agarro unos buses
 
 #### Día 4 **Martes**
 
-## Logro
-![traveller](assets/images/Captura-1.JPG)
-![traveller](assets/images/Captura-2.JPG)
-![traveller](assets/images/Captura-3.JPG)
-![traveller](assets/images/Captura-4.JPG)
+1. Hacer merge en una sola rama.
+2. Corregir errores.
 
-### El repositorio colaborativo
 
-https://github.com/alexandracch/social-network
