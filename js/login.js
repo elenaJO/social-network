@@ -1,8 +1,5 @@
 $(document).ready(function() {
-  setTimeout(function() {
-    window.location.href = '../views/newsfeed.html';
-  }, 40000);
-
+  
   // Initialize Firebase
   // var config = {
   //   apiKey: 'AIzaSyBTyPXp0vll8d2Fvi5nViLsKntlNxapEFY',
@@ -69,6 +66,10 @@ $(document).ready(function() {
     // }
     
     $('#loading').addClass('block');
+    
+    setTimeout(function() {
+      window.location.href = '../views/newsfeed.html';
+    }, 20000);
   } 
   
   // funcion para guardar en firebase los datos de quien entra
