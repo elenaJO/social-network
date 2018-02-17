@@ -179,8 +179,60 @@
     .photo-user{
       width: 100%;
       height: 100%;
+      border-radius: 50px;
     }
 
-    a {
-        color: white;
+    .photo-perfil{
+        width: 30px;
+        height: 30px;
     }
+
+    .img-pub{
+        width: 80%;
+        text-align: center;
+    }
+
+    #fileButton{
+      width:100px;
+    }
+
+    .img-user{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    }
+
+    .back-post{
+      background:#D1E5DA;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .div-name {
+      font-size: 20px;
+      font-weight: 700;
+      display: inline-block;
+      padding-left: 20px;
+  }
+
+  .back-post li {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .margin-left{
+    margin-left: 20px;
+  }
+
+  .text-left {
+    text-align: left; 
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .flex-spacing{
+    display: flex;
+    justify-content: space-around;
+  }

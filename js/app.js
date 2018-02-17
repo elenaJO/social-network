@@ -3,4 +3,3 @@ $(document).ready(function() {
     window.location.href = 'views/login.html';
   }, 5000);
 });
-  
