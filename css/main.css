@@ -236,3 +236,9 @@
     display: flex;
     justify-content: space-around;
   }
+
+  .flex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
