@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.button-collapse').sideNav();
   $('#photo-follow').attr('src', localStorage.photo);
   $('#name-follow').text(localStorage.nameFollow);
   var $seguidores = $('#seguidores-follow');
