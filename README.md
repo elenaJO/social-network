@@ -310,15 +310,12 @@ primero a jaen en avion y luego agarro unos buses
 
 #### Día 4 **Martes**
 
-
-
-
-
 ## Logro
 ![traveller](assets/images/Captura-1.JPG)
 ![traveller](assets/images/Captura-2.JPG)
 ![traveller](assets/images/Captura-3.JPG)
 ![traveller](assets/images/Captura-4.JPG)
 
+### El repositorio colaborativo
 
-
+https://github.com/alexandracch/social-network
