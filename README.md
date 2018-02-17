@@ -257,4 +257,10 @@ primero a jaen en avion y luego agarro unos buses
 1. Hacer merge en una sola rama.
 2. Corregir errores.
 
+## Trabajo Colaborativo
+
+* Elena Japa
+* Alexandra Calderon.
+* Laura Velarde
+
 
