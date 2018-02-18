@@ -65,7 +65,7 @@ $(document).ready(function() {
     //   console.log('ya noo');
     // }
     
-    $('#loading').addClass('block');
+    // $('#loading').addClass('block');
     
     setTimeout(function() {
       window.location.href = '../views/newsfeed.html';
