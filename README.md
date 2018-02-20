@@ -1,10 +1,9 @@
 # Travellers 
-  
-Travellers es una red social para aventureros donde pueden postear sus experiencias, compartir sus fotos y seguir a mas viajeros.
+ Travellers es una red social para aventureros donde pueden postear sus experiencias, compartir sus fotos y seguir a mas viajeros.
 
 ![captura-1](https://user-images.githubusercontent.com/32310087/36345726-524b0cbe-13fe-11e8-8e20-dff70b0995ab.JPG)
 
-![image](https://user-images.githubusercontent.com/32310087/36345734-8f642b6c-13fe-11e8-94f2-4a89ff22a918.png)
+## Desarrollado para [Laboratoria](http://laboratoria.la)
 
 ## Desarrollado con ...
 `HTML5` `CSS3` `JQuery` `Materialize` `Firebase`
